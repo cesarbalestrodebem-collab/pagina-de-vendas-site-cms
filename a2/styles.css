@@ -95,13 +95,12 @@ body::before {
   position: relative;
   z-index: 5;
 }
-.header .logo-text {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+.header .main-logo {
+  height: 45px;
+  width: auto;
+  margin: 0 auto;
 }
-.header .logo-text span { color: var(--gold-primary); }
+
 
 /* --- Hero --- */
 .hero {
