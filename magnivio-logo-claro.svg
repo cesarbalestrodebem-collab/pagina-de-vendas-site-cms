@@ -1,0 +1,43 @@
+<svg viewBox="0 0 500 120" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg"><defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&amp;display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&amp;display=swap');
+    
+    .logo-title { 
+      font-family: 'Playfair Display', serif; 
+      font-weight: 800; 
+      font-size: 54px; 
+      fill: #2c303a; 
+      letter-spacing: 0.01em;
+      transition: fill 0.3s ease;
+    }
+    .logo-sub { 
+      font-family: 'Montserrat', sans-serif; 
+      font-weight: 600; 
+      font-size: 15px; 
+      fill: #059669; 
+      letter-spacing: 0.38em; 
+      text-transform: uppercase; 
+      transition: fill 0.3s ease;
+    }
+  </style>
+</defs><g transform="translate(20, 15) scale(0.9)"><g>
+  <defs>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    <clipPath id="iconClip">
+      <rect x="0" y="0" width="100" height="100" rx="20"></rect>
+    </clipPath>
+  </defs>
+  
+  <g clip-path="url(#iconClip)">
+    <path d="M 25 0 V 100 M 50 0 V 100 M 75 0 V 100 M 0 25 H 100 M 0 50 H 100 M 0 75 H 100" stroke="#e2e8f0" strokewidth="1" style="transition: stroke 0.3s ease;"></path>
+  </g>
+  
+  <path d="M 10 55 L 25 55 L 37.5 20 L 50 65 L 62.5 20 L 75 55 L 90 55" fill="none" stroke="#059669" strokewidth="3.5" strokelinecap="round" strokelinejoin="round" filter="url(#neonGlow)" style="transition: stroke 0.3s ease;"></path>
+</g></g><text x="135" y="65" class="logo-title">Magnivio</text><text x="139" y="93" class="logo-sub">Digital</text></svg>

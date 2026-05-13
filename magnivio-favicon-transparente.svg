@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+  <defs>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    <clipPath id="iconClip">
+      <rect x="0" y="0" width="100" height="100" rx="20"></rect>
+    </clipPath>
+  </defs>
+  
+  <g clip-path="url(#iconClip)">
+    <!-- Grelha de fundo (Sem caixa preta sólida, totalmente transparente) -->
+    <path d="M 25 0 V 100 M 50 0 V 100 M 75 0 V 100 M 0 25 H 100 M 0 50 H 100 M 0 75 H 100" stroke="#1a2633" strokewidth="1"></path>
+  </g>
+  
+  <!-- Pulso Neon 'M' -->
+  <path d="M 10 55 L 25 55 L 37.5 20 L 50 65 L 62.5 20 L 75 55 L 90 55" fill="none" stroke="#00ffbb" strokewidth="3" strokelinecap="round" strokelinejoin="round" filter="url(#neonGlow)"></path>
+</g></svg>
